@@ -1,8 +1,8 @@
 package main.kontur;
 
-import java.util.ArrayList;
-import java.util.Objects;
-import java.util.Scanner;
+import java.util.*;
+
+import static java.lang.Math.max;
 
 public class Playground {
     public static void main(String[] args) {
@@ -13,18 +13,19 @@ public class Playground {
         int n = Integer.parseInt(tokens[0]);
         int m = Integer.parseInt(tokens[1]);
         ArrayList<char[]> cellRows = new ArrayList<>();
-        ArrayList<PlotFree> playgroundOptions = new ArrayList<>();
+
         // true - free
-        boolean[][] plots = new boolean[n][m];
+        int[][] plots = new int[n][m];
         for (int i = 0; i < n; i++) {
             cellRows.add(scan.nextLine().toCharArray());
         }
+        // Формируем матрицу квартала
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 char c = cellRows.get(i)[j];
                 if(c == '.'){
                     // free
-                    plots[i][j] = true;
+                    plots[i][j] = 1;
                    /* if(!playgroundOptions.isEmpty()){
                         playgroundOptions.add(new PlotFree(new ArrayList<>(i), new ArrayList<>(j)));
                     } else {
@@ -32,12 +33,37 @@ public class Playground {
 
                 } else {
                     // busy
-                    plots[i][j] = false;
+                    plots[i][j] = 0;
                 }
             }
         }
-
-
+        Vector<Integer> d = new Vector(m);
+        Vector<Integer> d1 = new Vector(m);
+        Vector<Integer> d2 = new Vector(m);
+        Stack<Integer> st = new Stack<>();
+        int ans = 0;
+    // Нахожденеие прямоугольника максимальной площади
+        for (int i=0; i<n; ++i) {
+            for (int j=0; j<m; ++j)
+                if (plots[i][j] == 1)
+                    d.add(j, i);
+            while (!st.empty()) st.pop();
+            for (int j=0; j<m; ++j) {
+                while (!st.empty() && d.get(st.peek()) <= d.get(j))  st.pop();
+//                d1.add(j, st.empty() ? -1 : st.peek());
+                d1.add(j, st.empty() ? 0 : st.peek());
+                st.push (j);
+            }
+            while (!st.empty()) st.pop();
+            for (int j=m-1; j>=0; --j) {
+                while (!st.empty() && d.get(st.peek()) <= d.get(j))  st.pop();
+                d2.add(j, st.empty() ? m : st.peek());
+                st.push (j);
+            }
+            for (int j=0; j<m; ++j)
+                ans = max (ans, (i - d.get(j)) * (d2.get(j) - d1.get(j) - 1));
+        }
+        System.out.println(ans);
 
         /*for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
