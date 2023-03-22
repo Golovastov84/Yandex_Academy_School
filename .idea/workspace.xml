@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ec5db6c-0dfa-448c-9db7-8ba29b95c608" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+    <list default="true" id="8ec5db6c-0dfa-448c-9db7-8ba29b95c608" name="Changes" comment="Start_study_Yandex_Academy_1.0">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/kontur/HinduMathematics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/kontur/MissingNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/kontur/Playground.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/kontur/PremierLeague.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PremierLeagueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YandexAcademySchool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/YandexAcademySchool.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +52,12 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/VSGol/IdeaProjects/YandexAcademySchool",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "D:/java/Новые_проекты/summary-java-backend",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.38045976",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -59,13 +65,13 @@
       <recent name="C:\Users\VSGol\IdeaProjects\YandexAcademySchool" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Main" />
+  <component name="RunManager" selected="Application.Playground">
+    <configuration name="HinduMathematics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.kontur.HinduMathematics" />
       <module name="YandexAcademySchool" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.*" />
+          <option name="PATTERN" value="main.kontur.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,9 +79,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MissingNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.kontur.MissingNumber" />
+      <module name="YandexAcademySchool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.kontur.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Playground" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.kontur.Playground" />
+      <module name="YandexAcademySchool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.kontur.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PremierLeague" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.kontur.PremierLeague" />
+      <module name="YandexAcademySchool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.kontur.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PremierLeagueTest.testCalculateDuration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="YandexAcademySchool" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PremierLeagueTest" />
+      <option name="METHOD_NAME" value="testCalculateDuration" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Playground" />
+        <item itemvalue="Application.PremierLeague" />
+        <item itemvalue="JUnit.PremierLeagueTest.testCalculateDuration" />
+        <item itemvalue="Application.MissingNumber" />
+        <item itemvalue="Application.HinduMathematics" />
       </list>
     </recent_temporary>
   </component>
@@ -88,6 +147,14 @@
       <option name="presentableId" value="Default" />
       <updated>1679285725771</updated>
     </task>
+    <task id="LOCAL-00001" summary="Start_study_Yandex_Academy_1.0">
+      <created>1679286341804</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679286341804</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -100,5 +167,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Start_study_Yandex_Academy_1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start_study_Yandex_Academy_1.0" />
   </component>
 </project>
