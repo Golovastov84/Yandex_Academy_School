@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ec5db6c-0dfa-448c-9db7-8ba29b95c608" name="Changes" comment="Playground_in_progress_2.0">
+    <list default="true" id="8ec5db6c-0dfa-448c-9db7-8ba29b95c608" name="Changes" comment="Playground_added_rectangle_analysis_algorithm_3.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/kontur/Playground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/kontur/Playground.java" afterDir="false" />
     </list>
@@ -152,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679467380624</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Playground_added_rectangle_analysis_algorithm_3.0">
+      <created>1679480822816</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679480822816</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +176,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start_study_Yandex_Academy_1.0" />
     <MESSAGE value="Playground_in_progress_2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Playground_in_progress_2.0" />
+    <MESSAGE value="Playground_added_rectangle_analysis_algorithm_3.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Playground_added_rectangle_analysis_algorithm_3.0" />
   </component>
 </project>

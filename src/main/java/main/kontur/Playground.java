@@ -38,6 +38,9 @@ public class Playground {
             }
         }
         Vector<Integer> d = new Vector(m);
+        for (int i = 0; i < m; i++) {
+            d.add(i, -1);
+        }
         Vector<Integer> d1 = new Vector(m);
         Vector<Integer> d2 = new Vector(m);
         Stack<Integer> st = new Stack<>();
@@ -50,8 +53,8 @@ public class Playground {
             while (!st.empty()) st.pop();
             for (int j=0; j<m; ++j) {
                 while (!st.empty() && d.get(st.peek()) <= d.get(j))  st.pop();
-//                d1.add(j, st.empty() ? -1 : st.peek());
-                d1.add(j, st.empty() ? 0 : st.peek());
+                d1.add(j, st.empty() ? -1 : st.peek());
+//                d1.add(j, st.empty() ? 0 : st.peek());
                 st.push (j);
             }
             while (!st.empty()) st.pop();
