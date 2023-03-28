@@ -12,31 +12,49 @@ public class Playground {
         String[] tokens = commandLine.split("\\s+", 2);
         int n = Integer.parseInt(tokens[0]);
         int m = Integer.parseInt(tokens[1]);
-        ArrayList<char[]> cellRows = new ArrayList<>();
+        char[] cellRows = new char[m];
+
+
 
         // true - free
-        int[][] plots = new int[n][m];
+        /*int[][] plots = new int[n][m];
         for (int i = 0; i < n; i++) {
             cellRows.add(scan.nextLine().toCharArray());
-        }
+        }*/
+
+        Vector<Vector<Integer>> plots  = new Vector(n);
         // Формируем матрицу квартала
         for (int i = 0; i < n; i++) {
+            Vector<Integer> cellRow = new Vector();
+            cellRows = scan.nextLine().toCharArray();
+            for (int j = 0; j < m; j++) {
+                if(cellRows[j] == '.'){
+                    // free
+                    cellRow.add(j, 0);
+                } else
+                    // busy
+                    cellRow.add(j, 1);
+            }
+            plots.add(cellRow);
+        }
+        // Формируем матрицу квартала
+        /*for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 char c = cellRows.get(i)[j];
                 if(c == '.'){
                     // free
                     plots[i][j] = 1;
-                   /* if(!playgroundOptions.isEmpty()){
+                   *//* if(!playgroundOptions.isEmpty()){
                         playgroundOptions.add(new PlotFree(new ArrayList<>(i), new ArrayList<>(j)));
                     } else {
-                    }*/
+                    }*//*
 
                 } else {
                     // busy
                     plots[i][j] = 0;
                 }
             }
-        }
+        }*/
         Vector<Integer> d = new Vector(m);
         for (int i = 0; i < m; i++) {
             d.add(i, -1);
@@ -48,8 +66,8 @@ public class Playground {
     // Нахожденеие прямоугольника максимальной площади
         for (int i=0; i<n; ++i) {
             for (int j=0; j<m; ++j)
-                if (plots[i][j] == 1)
-                    d.add(j, i);
+                if (plots.get(i).get(j) == 1)
+                    d.set(j, i);
             while (!st.empty()) st.pop();
             for (int j=0; j<m; ++j) {
                 while (!st.empty() && d.get(st.peek()) <= d.get(j))  st.pop();
